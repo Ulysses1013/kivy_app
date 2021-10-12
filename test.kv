@@ -1,0 +1,26 @@
+ImageWidget:
+
+<ImageWidget>:
+
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+
+        Image:
+            source: root.source
+
+        BoxLayout:
+            size_hint_y: 0.4
+            padding: 20,10,20,10
+            Button:
+                id: button1
+                text: 'Open Box'
+                font_size: 36
+                on_press: root.buttonRandom()
+
+            Button:
+                id: button2
+                text: 'Close Box'
+                font_size: 36
+                on_press: root.buttonOrigin()
